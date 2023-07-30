@@ -1,16 +1,16 @@
 Libraries and software for creating applications with bitcoin protocol.
 
 Main projects:
-- bitcoin consensus-level data types and structures (transactions, blocks etc)[^1];
-- client-side-valdiation with bitcoin ([deterministic bitcoin commitments][dbc] and [signle-use-seal][seals]);
-- wallet-related libraries in [`descriptor-wallet`](/BP-WG/descriptor-wallet) repo;
-- [BP Node]: efficient indexing bitcoin node written in rust (electum server replacement);
-- [StingerJet]: WIP on a languague for better wallet descriptors.
+- **[BP Primitives]**: bitcoin consensus-level data types and structures (transactions, blocks etc);
+- **[BP Core]**: client-side-valdiation with bitcoin ([deterministic bitcoin commitments][dbc] and [signle-use-seal][seals]);
+- **[BP Wallet]**: Modern, lightweight, standard-compliant read-only wallet library without rust-bitcoin/miniscript dependencies
+- **[BP Tools]**: Bitcoin protocol command-line wallet & tools 
+- **[BP Node]**: efficient indexing bitcoin node written in rust (electum server replacement);
 
-[^1]: At present time [`rust-bitcoin`](/rust-bitcoin/rust-bitcoin) is used as a consensus library; 
-however a more modern and efficient re-implementation is WIP happening in [`bp`](/BP-WG/bp) repo.
-
+[BP Primitives]: https://github.com/BP-WG/bp-core/tree/master/primitives
+[BP Core]: https://github.com/BP-WG/bp-core
+[BP Wallet]: https://github.com/BP-WG/bp-wallet
+[BP Tools]: https://github.com/BP-WG/bp-tools
+[BP Node]: https://github.com/BP-WG/bp-node
 [dbc]: https://github.com/BP-WG/bp-core/tree/master/dbc
 [seals]: https://github.com/BP-WG/bp-core/tree/master/seals
-[BP Node]: https://github.com/BP-WG/stingerjet
-[StingerJet]: https://github.com/BP-WG/stingerjet-docs
